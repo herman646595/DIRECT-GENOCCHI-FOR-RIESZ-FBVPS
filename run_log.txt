@@ -1,0 +1,44 @@
+Direct Genocchi-Riesz collocation reproducibility run
+NumPy 2.3.5; validation points=1024; Taylor degree=100
+
+Example 1
+N=4: a=1.2: E=1.6019e-02, cond(QR)=1.704e+01, alg=2.17e-19, residual=9.03e-02 | a=1.5: E=1.9142e-02, cond(QR)=2.629e+01, alg=1.73e-18, residual=1.66e-01 | a=1.8: E=2.2311e-02, cond(QR)=3.936e+01, alg=6.94e-18, residual=3.02e-01
+N=6: a=1.2: E=1.1286e-03, cond(QR)=6.318e+01, alg=6.94e-18, residual=2.02e-02 | a=1.5: E=1.1792e-03, cond(QR)=1.229e+02, alg=1.39e-17, residual=6.01e-02 | a=1.8: E=1.2258e-03, cond(QR)=2.245e+02, alg=2.78e-17, residual=1.89e-01
+N=8: a=1.2: E=1.5630e-15, cond(QR)=1.601e+02, alg=2.43e-17, residual=3.66e-14 | a=1.5: E=1.1173e-15, cond(QR)=3.727e+02, alg=2.78e-17, residual=2.08e-14 | a=1.8: E=1.1175e-15, cond(QR)=8.002e+02, alg=8.33e-17, residual=2.85e-14
+N=10: a=1.2: E=1.8579e-15, cond(QR)=3.294e+02, alg=2.76e-17, residual=4.82e-14 | a=1.5: E=1.2748e-15, cond(QR)=8.866e+02, alg=4.16e-17, residual=2.13e-14 | a=1.8: E=1.2635e-15, cond(QR)=2.175e+03, alg=6.94e-17, residual=7.37e-14
+N=12: a=1.2: E=1.6558e-15, cond(QR)=5.908e+02, alg=2.78e-17, residual=4.88e-14 | a=1.5: E=1.0751e-15, cond(QR)=1.792e+03, alg=1.25e-16, residual=2.64e-14 | a=1.8: E=1.1114e-15, cond(QR)=4.913e+03, alg=1.39e-16, residual=4.16e-14
+N=14: a=1.2: E=2.0582e-15, cond(QR)=9.633e+02, alg=7.29e-17, residual=5.62e-14 | a=1.5: E=1.3192e-15, cond(QR)=3.232e+03, alg=7.63e-17, residual=3.21e-14 | a=1.8: E=1.0938e-15, cond(QR)=9.746e+03, alg=1.94e-16, residual=2.06e-14
+N=16: a=1.2: E=1.6051e-15, cond(QR)=1.471e+03, alg=5.55e-17, residual=5.53e-14 | a=1.5: E=1.3696e-15, cond(QR)=5.382e+03, alg=4.51e-16, residual=5.22e-14 | a=1.8: E=1.0623e-15, cond(QR)=1.761e+04, alg=4.02e-16, residual=2.96e-14
+
+Example 2
+N=4: a=1.2: E=2.1343e-01, cond(QR)=1.704e+01, alg=3.33e-16, residual=1.16e+00 | a=1.5: E=2.6803e-01, cond(QR)=2.629e+01, alg=1.78e-15, residual=2.61e+00 | a=1.8: E=3.3077e-01, cond(QR)=3.936e+01, alg=2.22e-15, residual=8.46e+00
+N=6: a=1.2: E=2.8498e-02, cond(QR)=6.318e+01, alg=8.88e-16, residual=4.85e-01 | a=1.5: E=3.1266e-02, cond(QR)=1.229e+02, alg=1.78e-15, residual=1.44e+00 | a=1.8: E=3.3712e-02, cond(QR)=2.245e+02, alg=3.55e-15, residual=4.50e+00
+N=8: a=1.2: E=9.9268e-04, cond(QR)=1.601e+02, alg=1.33e-15, residual=3.95e-02 | a=1.5: E=1.1021e-03, cond(QR)=3.727e+02, alg=1.78e-15, residual=1.35e-01 | a=1.8: E=1.2047e-03, cond(QR)=8.002e+02, alg=3.55e-15, residual=4.65e-01
+N=10: a=1.2: E=7.0010e-05, cond(QR)=3.294e+02, alg=1.78e-15, residual=2.27e-03 | a=1.5: E=7.1499e-05, cond(QR)=8.866e+02, alg=2.66e-15, residual=6.44e-03 | a=1.8: E=7.3826e-05, cond(QR)=2.175e+03, alg=5.33e-15, residual=1.88e-02
+N=12: a=1.2: E=3.0716e-06, cond(QR)=5.908e+02, alg=2.44e-15, residual=1.92e-04 | a=1.5: E=3.1882e-06, cond(QR)=1.792e+03, alg=1.11e-14, residual=6.47e-04 | a=1.8: E=3.3090e-06, cond(QR)=4.913e+03, alg=1.07e-14, residual=2.20e-03
+N=14: a=1.2: E=6.2069e-08, cond(QR)=9.633e+02, alg=1.78e-15, residual=3.86e-06 | a=1.5: E=6.3661e-08, cond(QR)=3.232e+03, alg=5.33e-15, residual=1.43e-05 | a=1.8: E=6.5124e-08, cond(QR)=9.746e+03, alg=3.38e-14, residual=5.30e-05
+N=16: a=1.2: E=3.9549e-09, cond(QR)=1.471e+03, alg=5.33e-15, residual=3.11e-07 | a=1.5: E=4.0144e-09, cond(QR)=5.382e+03, alg=1.78e-14, residual=1.28e-06 | a=1.8: E=4.1599e-09, cond(QR)=1.761e+04, alg=3.24e-14, residual=5.32e-06
+
+Example 3
+N=4: a=1.2: E=2.3243e-02, cond(QR)=1.704e+01, alg=2.22e-16, residual=1.74e-01 | a=1.5: E=2.5132e-02, cond(QR)=2.629e+01, alg=4.44e-16, residual=3.94e-01 | a=1.8: E=2.5734e-02, cond(QR)=3.936e+01, alg=4.44e-16, residual=9.79e-01
+N=6: a=1.2: E=8.3227e-05, cond(QR)=6.318e+01, alg=2.22e-16, residual=1.56e-03 | a=1.5: E=8.9446e-05, cond(QR)=1.229e+02, alg=2.22e-16, residual=4.69e-03 | a=1.8: E=9.3768e-05, cond(QR)=2.245e+02, alg=8.88e-16, residual=1.49e-02
+N=8: a=1.2: E=1.7254e-07, cond(QR)=1.601e+02, alg=4.44e-16, residual=4.46e-06 | a=1.5: E=1.7943e-07, cond(QR)=3.727e+02, alg=9.99e-16, residual=1.48e-05 | a=1.8: E=1.8506e-07, cond(QR)=8.002e+02, alg=2.11e-15, residual=4.97e-05
+N=10: a=1.2: E=1.7592e-10, cond(QR)=3.294e+02, alg=6.66e-16, residual=6.70e-09 | a=1.5: E=1.8174e-10, cond(QR)=8.866e+02, alg=8.88e-16, residual=1.98e-08 | a=1.8: E=1.8718e-10, cond(QR)=2.175e+03, alg=2.22e-15, residual=5.84e-08
+N=12: a=1.2: E=1.2262e-13, cond(QR)=5.908e+02, alg=2.00e-15, residual=5.84e-12 | a=1.5: E=1.2551e-13, cond(QR)=1.792e+03, alg=4.44e-15, residual=1.94e-11 | a=1.8: E=1.2818e-13, cond(QR)=4.913e+03, alg=5.07e-15, residual=6.55e-11
+N=14: a=1.2: E=5.8287e-16, cond(QR)=9.633e+02, alg=4.44e-16, residual=2.51e-14 | a=1.5: E=7.7716e-16, cond(QR)=3.232e+03, alg=4.44e-15, residual=5.50e-14 | a=1.8: E=5.5511e-16, cond(QR)=9.746e+03, alg=7.99e-15, residual=3.69e-14
+
+Example 4
+N=4: a=1.5: E=2.9818e-02, cond(QR)=2.629e+01, alg=2.78e-17, residual=5.01e-01
+N=6: a=1.5: E=7.4876e-04, cond(QR)=1.229e+02, alg=5.55e-17, residual=1.03e-01
+N=8: a=1.5: E=1.4853e-04, cond(QR)=3.727e+02, alg=3.33e-16, residual=4.38e-02
+N=10: a=1.5: E=5.1103e-05, cond(QR)=8.866e+02, alg=2.22e-16, residual=1.47e-02
+N=12: a=1.5: E=2.2882e-05, cond(QR)=1.792e+03, alg=9.99e-16, residual=8.58e-03
+N=14: a=1.5: E=1.1967e-05, cond(QR)=3.232e+03, alg=1.78e-15, residual=7.27e-03
+N=16: a=1.5: E=6.9548e-06, cond(QR)=5.382e+03, alg=1.33e-15, residual=6.58e-03
+
+Reflection identity check
+alpha=1.2: abs=4.6566e-09, rel=1.8158e-15
+alpha=1.5: abs=6.5193e-09, rel=8.7178e-16
+alpha=1.8: abs=4.2841e-08, rel=3.1267e-15
+
+Elapsed seconds: 1.745
